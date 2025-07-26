@@ -1,5 +1,7 @@
 # WeatherStation Electronics
 
+This document contains information for obtaining and wiring up the electronics in the Clear Creek Scientific Weather Station, including a [bill of materials](# Bill of Materials) and a [wiring diagram](# Wiring Diagram).
+
 ## Bill of Materials
 
 |Manufacturer|Model|Description|Quantity|Example|
