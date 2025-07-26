@@ -3,7 +3,8 @@
 ## Bill of Materials
 
 |Manufacturer|Model|Description|Quantity|Example|
-Raspberry Pi|Zero WH|Single-board computer with wireless and headers|1|https://www.microcenter.com/product/502843/raspberry-pi-zero-wh-with-pre-soldered-headers|
++------------------+-----------+--------+-------+
+|Raspberry Pi|Zero WH|Single-board computer with wireless and headers|1|https://www.microcenter.com/product/502843/raspberry-pi-zero-wh-with-pre-soldered-headers|
 |Multiple|At least 32 GB|Micro-SD card|1|https://www.microcenter.com/product/675340/sandisk-32gb-ultra-sdxc-class-10-u1-flash-memory-card|
 |Adafruit|BME280|"Temperature| Humidity| Pressure sensor"|1|https://www.adafruit.com/product/2652|
 |Adafruit|STEMMA QT/Qwiic JST SH 4-pin Cable 1 mm pitch with Female Sockets|Connector|1|https://www.adafruit.com/product/4397|
