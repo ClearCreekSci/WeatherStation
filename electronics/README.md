@@ -1,6 +1,6 @@
 # WeatherStation Electronics
 
-This document contains information for obtaining and wiring up the electronics in the Clear Creek Scientific Weather Station, including a [bill of materials](#bill-of-materials) and a [wiring diagram](#wiring-diagram).
+This document contains information for obtaining and wiring up the electronics in the Clear Creek Scientific Weather Station, including a [bill of materials](#bill-of-materials), [setting up the Raspberry PI](#setting-up-the-raspberry-pi) and  [wiring the parts together](#wiring-diagram).
 
 ## Bill of Materials
 
