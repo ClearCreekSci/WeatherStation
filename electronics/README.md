@@ -13,6 +13,9 @@ This document contains information for obtaining and wiring up the electronics i
 |Adafruit|STEMMA QT/Qwiic JST SH 4-pin Cable 1 mm pitch with Female Sockets|Connector|1|https://www.adafruit.com/product/4397|
 |Multiple|Female to female jumper wires|Optional: use instead of the STEMMA QT/Qwiic connector|4|https://www.adafruit.com/product/1950|
 
+## Setting up the Raspberry PI
+
+TODO: Describe how to access the Raspberry Pi through connected monitor and keyboard OR through ssh. Refer to installing the OS in the software section. We mostly want help the consumer get familiar with using the Raspberry Pi here. We may also want to link to a CCS video demonstrating how to setup the PI for different environments (Windows/Linux host).
 
 ## Wiring Diagram
 
