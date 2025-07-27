@@ -7,6 +7,7 @@ This document contains information for obtaining and wiring up the electronics i
 |Manufacturer|Model|Description|Quantity|Example|
 |------------|-----|-----------|--------|-------|
 |Raspberry Pi|Zero WH|Single-board computer with wireless and headers|1|https://www.microcenter.com/product/502843/raspberry-pi-zero-wh-with-pre-soldered-headers|
+|Raspberry Pi|12.5 W|Micro USB Power Supply (or equivalent)|1|https://www.raspberrypi.com/products/micro-usb-power-supply/|
 |Multiple|At least 32 GB|Micro-SD card|1|https://www.microcenter.com/product/675340/sandisk-32gb-ultra-sdxc-class-10-u1-flash-memory-card|
 |Adafruit|BME280|Temperature, Humidity, and Pressure sensor|1|https://www.adafruit.com/product/2652|
 |Adafruit|STEMMA QT/Qwiic JST SH 4-pin Cable 1 mm pitch with Female Sockets|Connector|1|https://www.adafruit.com/product/4397|
