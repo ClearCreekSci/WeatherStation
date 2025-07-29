@@ -29,7 +29,7 @@ The Raspberry Pi requires some setup before it is able to be used in the Clear C
 
 Perform the following steps:
 
-* [Install an Operating System on the SD Card](#install-an-operating-system-on-the-sd-card]
+* [Install an Operating System on the SD Card](#install-an-operating-system-on-the-sd-card)
 * [Setup External Keyboard and Monitor](#setup-external-keyboard-and-monitor)
 * [Setup SSH](#setup-ssh)
 * [Customize settings](#customize-settings)
@@ -48,7 +48,9 @@ This step is is technically optional, but makes customization of the Raspberry P
  
 ### Setup SSH
 
-This step is needed to install the [WeatherStation software]().
+This step is needed to install the [WeatherStation software](https://github.com/ClearCreekSci/WeatherStation/tree/main/software).
+
+### Customize Settings
 
 
 ## Wiring Diagram
