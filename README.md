@@ -9,3 +9,6 @@ The following resources are provided in the various folders of this project.
 * [enclosure](https://github.com/ClearCreekSci/WeatherStation/tree/main/enclosure)
 
 We suggest you start with the electronics folder, purchasing the desired equipment. You should then install and test the software before wiring the electronic components together and creating an enclosure for them. Once assembled, the weather station data can be read using the Clear Creek Scientific Data app on an Android 8 or higher device (link forthcoming).
+
+[Testing](https://github.com/ClearCreekSci/WikiBase/wiki)
+
