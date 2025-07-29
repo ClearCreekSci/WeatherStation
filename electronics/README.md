@@ -4,6 +4,8 @@ This document contains information for obtaining and wiring up the electronics i
 
 ## Bill of Materials
 
+### Standard Components
+
 |Manufacturer|Model|Description|Quantity|Example|
 |------------|-----|-----------|--------|-------|
 |Raspberry Pi|Zero WH|Single-board computer with wireless and headers|1|https://www.microcenter.com/product/502843/raspberry-pi-zero-wh-with-pre-soldered-headers|
@@ -11,6 +13,14 @@ This document contains information for obtaining and wiring up the electronics i
 |Multiple|At least 32 GB|Micro-SD card|1|https://www.microcenter.com/product/675340/sandisk-32gb-ultra-sdxc-class-10-u1-flash-memory-card|
 |Adafruit|BME280|Temperature, Humidity, and Pressure sensor|1|https://www.adafruit.com/product/2652|
 |Adafruit|STEMMA QT/Qwiic JST SH 4-pin Cable 1 mm pitch with Female Sockets|Connector|1|https://www.adafruit.com/product/4397|
+
+
+### Optional Components
+
+|Manufacturer|Model|Description|Quantity|Example|
+|------------|-----|-----------|--------|-------|
+|Multiple|Mini HDMI to HDMI|Video cable to connect Raspberry Pi to PC|1|https://www.raspberrypi.com/products/standard-hdmi-a-male-to-mini-hdmi-c-male-cable/|
+|Multiple|USB A to USB Micro B|USB converter to connect Raspberry Pi to standard PC keyboard|1|https://www.microconnectors.com/usb-a-female-to-usb-micro-b-male-2-0-adapter-otg/|
 |Multiple|Female to female jumper wires|Optional: use instead of the STEMMA QT/Qwiic connector|4|https://www.adafruit.com/product/1950|
 
 ## Setting up the Raspberry PI
