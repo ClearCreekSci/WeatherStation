@@ -1,6 +1,6 @@
 # WeatherStation Electronics
 
-This document contains information for obtaining and wiring up the electronics in the Clear Creek Scientific Weather Station, including a [bill of materials](#bill-of-materials), [setting up the Raspberry PI](#setting-up-the-raspberry-pi) and  [wiring the parts together](#wiring-diagram).
+This document contains information for obtaining and wiring up the electronics in the Clear Creek Scientific Weather Station, including a [bill of materials](#bill-of-materials), [setting up the Raspberry Pi](#setting-up-the-raspberry-pi) and  [wiring the parts together](#wiring-diagram).
 
 ## Bill of Materials
 
@@ -23,14 +23,40 @@ This document contains information for obtaining and wiring up the electronics i
 |Multiple|USB A to USB Micro B|USB converter to connect Raspberry Pi to standard PC keyboard|1|https://www.microconnectors.com/usb-a-female-to-usb-micro-b-male-2-0-adapter-otg/|
 |Multiple|Female to female jumper wires|Optional: use instead of the STEMMA QT/Qwiic connector|4|https://www.adafruit.com/product/1950|
 
-## Setting up the Raspberry PI
+## Setting up the Raspberry Pi
 
-TODO: Describe how to access the Raspberry Pi through connected monitor and keyboard OR through ssh. Refer to installing the OS in the software section. We mostly want help the consumer get familiar with using the Raspberry Pi here. We may also want to link to a CCS video demonstrating how to setup the PI for different environments (Windows/Linux host).
+The Raspberry Pi requires some setup before it is able to be used in the Clear Creek Scientific WeatherStation. General instructions for multiple types of Raspberry Pi can be found on the [official Raspberry Pi website](https://www.raspberrypi.com/documentation/computers/getting-started.html). Specific instructions for the weather station follow:
+
+Perform the following steps:
+
+* [Install an Operating System on the SD Card](#install-an-operating-system-on-the-sd-card]
+* [Setup External Keyboard and Monitor](#setup-external-keyboard-and-monitor)
+* [Setup SSH](#setup-ssh)
+* [Customize settings](#customize-settings)
+ 
+### Install an Operating System on The SD Card
+
+#### Using Windows as Host
+
+
+#### Using Linux as Host
+
+
+### Setup External Keyboard and Monitor
+
+This step is is technically optional, but makes customization of the Raspberry Pi easier to perform. You will need an extra PC keyboard and monitor plus the optional adapters mentioned in the bill of materials above. Use the HDMI adapter to connect the mini-HDMI port on the Raspberry Pi Zero to the HDMI port on the PC monitor. Use the USB adapter to connect one of the USB micro B ports to the external keyboard monitor. The other USB micro B port will be used with the power adapter to power on the Raspberry Pi Zero.
+ 
+### Setup SSH
+
+This step is needed to install the [WeatherStation software]().
+
 
 ## Wiring Diagram
 
+The two diagrams below indicate how the pins on the Raspberry Pi Zero should be connected to the pins on the Adafruit BME280. The first diagram shows how to connect the two boards using the Adafruit STEMMA QT/Qwiic cables. The second diagram shows how to connect the two boards using 4 female-to-female jumper wires.
+
+### With Adafruit STEMMA QT/Qwiic Cable
 ```
-With Adafruit STEMMA QT/Qwiic Cable
 -----------------------------------
 
                  +---------------------------------------+
@@ -78,12 +104,11 @@ With Adafruit STEMMA QT/Qwiic Cable
                     |o 37        38 o|
                     |o 39        40 o|
                     +----------------+
+```
 
 
-
-With female to female jumper wires
-----------------------------------
-
+### With female to female jumper wires
+```
          +---------------------------------------+
          |               BME280                  |
          +-----+                           +-----+ 
