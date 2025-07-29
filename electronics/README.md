@@ -21,23 +21,23 @@ This document contains information for obtaining and wiring up the electronics i
 |------------|-----|-----------|--------|-------|
 |Multiple|Mini HDMI to HDMI|Video cable to connect Raspberry Pi to PC|1|https://www.raspberrypi.com/products/standard-hdmi-a-male-to-mini-hdmi-c-male-cable/|
 |Multiple|USB A to USB Micro B|USB converter to connect Raspberry Pi to standard PC keyboard|1|https://www.microconnectors.com/usb-a-female-to-usb-micro-b-male-2-0-adapter-otg/|
-|Multiple|Female to female jumper wires|Optional: use instead of the STEMMA QT/Qwiic connector|4|https://www.adafruit.com/product/1950|
+|Multiple|Female-to-female jumper wires|Optional: use instead of the STEMMA QT/Qwiic connector|4|https://www.adafruit.com/product/1950|
 
 ## Setting up the Raspberry Pi
 
-The Raspberry Pi requires some setup before it is able to be used in the Clear Creek Scientific WeatherStation. General instructions for multiple types of Raspberry Pi can be found on the [official Raspberry Pi website](https://www.raspberrypi.com/documentation/computers/getting-started.html). Specific instructions for the weather station follow:
+The Raspberry Pi requires some setup before it is able to be used in the Clear Creek Scientific WeatherStation. General instructions for multiple types of Raspberry Pi can be found on the [official Raspberry Pi website](https://www.raspberrypi.com/documentation/computers/getting-started.html). Specific instructions for the WeatherStation follow:
 
 Perform the following steps:
 
 * [Install an Operating System on the SD Card](#install-an-operating-system-on-the-sd-card)
 * [Setup External Keyboard and Monitor](#setup-external-keyboard-and-monitor)
+* [Plug in the Power Cord](#plug-in-the-power-cord)
 * [Setup SSH](#setup-ssh)
 * [Customize settings](#customize-settings)
  
 ### Install an Operating System on The SD Card
 
 #### Using Windows as Host
-
 
 #### Using Linux as Host
 
@@ -46,9 +46,22 @@ Perform the following steps:
 
 This step is is technically optional, but makes customization of the Raspberry Pi easier to perform. You will need an extra PC keyboard and monitor plus the optional adapters mentioned in the bill of materials above. Use the HDMI adapter to connect the mini-HDMI port on the Raspberry Pi Zero to the HDMI port on the PC monitor. Use the USB adapter to connect one of the USB micro B ports to the external keyboard monitor. The other USB micro B port will be used with the power adapter to power on the Raspberry Pi Zero.
  
+### Plug in the Power Cord
+
+If you haven't already done so, plug in the power adapter and connect the USB micro B cable to the second USB micro B port on the Raspberry Pi. You should see a green LED start to blink on the Pi. If you connected and external monitor to the Pi, you should see information on the screen as the Pi boots up. If you don't have a monitor, wait approximately two minutes to allow the Pi to start.
+
 ### Setup SSH
 
-This step is needed to install the [WeatherStation software](https://github.com/ClearCreekSci/WeatherStation/tree/main/software).
+This step is needed to install the [WeatherStation software](https://github.com/ClearCreekSci/WeatherStation/tree/main/software), but is also necessary if you decide to not connect an external keyboard and monitor to the Raspberry Pi Zero.
+
+#### Using Windows as Host
+
+##### Using PuTTY
+
+##### Using WSL
+
+#### Using Linux as Host
+
 
 ### Customize Settings
 
@@ -109,7 +122,7 @@ The two diagrams below indicate how the pins on the Raspberry Pi Zero should be 
 ```
 
 
-### With female to female jumper wires
+### With female-to-female jumper wires
 ```
          +---------------------------------------+
          |               BME280                  |
