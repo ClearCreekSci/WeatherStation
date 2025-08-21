@@ -1,10 +1,10 @@
 #!/usr/bin/bash
 UNZIP_DST="./unzip"
 TOPLEVEL_DST="/opt/ccs"
-VENV_DST="/opt/ccs/venv"
+VENV_DST="/opt/ccs/venv_weatherstation"
 VENV_LIB_DIR="${VENV_DST}/lib"
 SITE_DIR="site-packages"
-DATASTATION_DST="/opt/ccs/DataStation"
+WEATHERSTATION_DST="/opt/ccs/WeatherStation"
 SYSTEMD_SERVICE_DST="/etc/systemd/system"
 DBUS_CONF_DST="/etc/dbus-1/system.d"
 
@@ -52,14 +52,14 @@ done
 
 cp -r "${UNZIP_DST}/ccs_dbus_objects" "${VENV_LIB_DIR}/${PYTHON_VER}/${SITE_DIR}/dbus_objects"
 
-# Setup up the DataStation files...
-mkdir -p "${DATASTATION_DST}"
+# Setup up the WeatherStation files...
+mkdir -p "${WEATHERSTATION_DST}"
 
-echo "Copying DataStation files..."
-cp "${UNZIP_DST}/data_server.py" "${DATASTATION_DST}"
-cp "${UNZIP_DST}/bluez_dbus.py" "${DATASTATION_DST}"
-cp -r  "${UNZIP_DST}/plugins" "${DATASTATION_DST}"
-cp -r  "${UNZIP_DST}/manifest.xml" "${DATASTATION_DST}"
+echo "Copying WeatherStation files..."
+cp "${UNZIP_DST}/data_server.py" "${WEATHERSTATION_DST}"
+cp "${UNZIP_DST}/bluez_dbus.py" "${WEATHERSTATION_DST}"
+cp -r  "${UNZIP_DST}/plugins" "${WEATHERSTATION_DST}"
+cp -r  "${UNZIP_DST}/manifest.xml" "${WEATHERSTATION_DST}"
 cp "${UNZIP_DST}/system/ccsdata.service" "${SYSTEMD_SERVICE_DST}"
 
 echo "Creating ccsdata systemd service..."

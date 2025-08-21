@@ -67,14 +67,14 @@ Use some version of scp (secure copy) to move files from the installation comput
 #### Copying Files Using PuTTY on Windows
 
 * On the installation computer, open a command prompt and navigate to the folder where you downloaded the weather station software. Change to the "software" folder. Use pscp.exe to copy the following files to the your Raspberry Pi user's home directory. You will need to know the directory where PuTTY is installed. This example assumes the default installation directory. In the example commands shown, replace `<username for Pi>` with the username you previously chose for the Raspberry Pi. Replace <IP address for Pi>` with the IP address you noted above. After running each command, you will be asked for the password for the Raspberry Pi. 
-  * `"C:\Program Files\PuTTY\pscp.exe" install_DataStation.sh <username for Pi>@<IP address for Pi>:/home/<username for Pi>`
-  * `"C:\Program Files\PuTTY\pscp.exe" v1.0.0_DataStation_Install_Bundle.zip <username for Pi>@<IP address for Pi>:/home/<username for Pi>`
+  * `"C:\Program Files\PuTTY\pscp.exe" install_WeatherStation.sh <username for Pi>@<IP address for Pi>:/home/<username for Pi>`
+  * `"C:\Program Files\PuTTY\pscp.exe" v1.0.0_WeatherStation_Install_Bundle.zip <username for Pi>@<IP address for Pi>:/home/<username for Pi>`
 
 
 ##### Copying Files Using WSL on Windows
 
 * On the installation computer, open a command prompt and navigate to the folder where you downloaded the weather station software. Change to the "software" folder. Run the command: `wsl`. Use the scp command to copy the following files to your Raspberry Pi user's home directory. In the example commands shown, replace `<username for Pi>` with the username you previously chose for the Raspberry Pi. Replace <IP address for Pi>` with the IP address you noted above. After running each command, you will be asked for the password for the Raspberry Pi.
-  * `scp install_DataStation.sh <username for Pi>@<IP address for PI>:/home/<username for Pi>`
+  * `scp install_WeatherStation.sh <username for Pi>@<IP address for PI>:/home/<username for Pi>`
   * `scp v1.0.0_DataStation_Install_Bundle.zip <username for Pi>@<IP address for PI:/home/<username for Pi>`
 
 
@@ -86,8 +86,8 @@ TODO:
 #### Copying Files Using Linux
 
 * On the installation computer, open a command prompt and navigate to the directory where you downloaded the weather station software. Change to the "software" directory. Use the scp command to copy the following files to your Raspberry Pi user's home directory. In the example commands shown, replace `<username for Pi>` with the username you previously chose for the Raspberry Pi. Replace <IP address for Pi>` with the IP address you noted above. After running each command, you will be asked for the password for the Raspberry Pi.
-  * `scp install_DataStation.sh pi@<IP address for PI>:/home/<username for Pi>`
-  * `scp v1.0.0_DataStation_Install_Bundle.zip pi@<IP address for PI:/home/<username for Pi>`
+  * `scp install_WeatherStation.sh pi@<IP address for PI>:/home/<username for Pi>`
+  * `scp v1.0.0_WeatherStation_Install_Bundle.zip pi@<IP address for PI:/home/<username for Pi>`
 
 
 ## Running the Installation Script
@@ -98,7 +98,7 @@ The last step is to run the installation script on the Raspberry Pi which will c
 
 If you have a keyboard and monitor connected to the Raspberry Pi, navigate to your user's home directory and run the following:
 
-`sudo ./install_DataStation.sh v1.0.0_DataStation_Install_Bundle.zip`
+`sudo ./install_WeatherStation.sh v1.0.0_WeatherStation_Install_Bundle.zip`
 
 After the script runs, you should see a message indicating successful installation.
 
@@ -107,7 +107,7 @@ After the script runs, you should see a message indicating successful installati
 
 Start PuTTY by clicking on the PuTTY icon. In the dialog box that appears, type the IP address of the Raspberry Pi in the box named "Host Name (or IP address)". Click the "Open" button. When asked to login, use the credentials that you previously configured for the Raspberry Pi. In the terminal window that appears, type the following:
 
-`sudo ./install_DataStation.sh v1.0.0_DataStation_Install_Bundle.zip`
+`sudo ./install_WeatherStation.sh v1.0.0_WeatherStation_Install_Bundle.zip`
 
 After the script runs, you should see a message indicating successful installation.
 
@@ -119,7 +119,7 @@ After the script runs, you should see a message indicating successful installati
 * Once WSL has started, use SSH to connect to the Raspberry PI (you'll be asked for the password):
   * `ssh <username for Pi>@<IP address for PI>`
 * Once connected to the Raspberry Pi, run the install script as root, passing the install bundle as a parameter:
-  * `sudo ./install_DataStation.sh v1.0.0_DataStation_Install_Bundle.zip`
+  * `sudo ./install_WeatherStation.sh v1.0.0_WeatherStation_Install_Bundle.zip`
 
 After the script runs, you should see a message indicating successful installation.
  
@@ -134,7 +134,7 @@ TODO:
 * On the installation computer, use SSH to connect to the Raspberry PI (you'll be asked for the password):
   * `ssh <username for Pi>@<IP address for PI>`
 * Once connected to the Raspberry Pi, run the install script as root, passing the install bundle as a parameter:
-  * `sudo ./install_DataStation.sh v1.0.0_DataStation_Install_Bundle.zip`
+  * `sudo ./install_WeatherStation.sh v1.0.0_WeatherStation_Install_Bundle.zip`
 
 After the script runs, you should see a message indicating successful installation.
 
